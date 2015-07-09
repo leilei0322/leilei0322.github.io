@@ -1,0 +1,541 @@
+/* Colors starts */
+$grayLight: #dcdcdc;
+$gray: #777777;
+$grayDeep: #454545;
+$grayMedium: #757575;
+
+$white: #ffffff;
+$deepDark: #22272d;
+$pink: #FA3D3D;
+$red: #f81858;
+/* Colors ends */
+
+/* CSS3 Animation */
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinrev {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+/* end animation */
+
+/* import fonts */
+@font-face {
+  font-family: 'hans regular';
+  src: url('./fonts/NotoSansHans-Regular.otf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hans medium';
+  src: url('./fonts/NotoSansHans-Medium.otf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hans light';
+  src: url('./fonts/NotoSansHans-Thin.otf') format('truetype');
+  font-style: normal;
+}
+
+.light-font {
+  font-family: 'hans light';
+}
+
+.regular-font {
+  font-family: 'hans regular';
+}
+
+.medium-font {
+  font-family: 'hans regular';
+}
+
+.emphasize {
+  font-family: 'hans medium';
+  color: $pink;
+}
+
+.emphasize-light {
+  font-family: 'hans medium';
+  color: $pink;
+}
+/* import font ends */
+
+/* Customize Carousel */
+.carousel-inner {
+  margin-bottom: 50px;
+  .banner_text {
+    position: absolute;
+    top: 137px;
+    bottom: 30px;
+    h1 {
+//      font-family: 'museo sans';
+      font-weight: 100;
+      font-size: 58px;
+      color: $white;
+      letter-spacing: 5px;
+    }
+    p {
+      color: $red;
+      font-weight: 100;
+      font-size: 24px;
+      float: left;
+      img {
+        display: inline-block;
+      }
+    }
+  }
+}
+.carousel-indicators {
+  bottom: -50px;
+  left: 55px;
+  li {
+    width: 7px;
+    height: 7px;
+    border: none;
+    background-color: $gray;
+  }
+  li.active {
+    width: 9px;
+    height: 9px;
+    border: none;
+    background-color: #000000;
+  }
+}
+/* Carousel ends */
+
+/* Customize reponsive */
+/* Large Devices Desktops  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+  .jumbotron {
+    h1 {
+      font-size: 36px;
+    }
+  }
+  .slogon
+  {
+    .jumbotron {
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+  .works {
+    p {
+      font-size: 18px;
+    }
+  }
+
+  #service {
+    .service_type {
+      h3 {
+        font-size: 28px;
+        font-family: 'hans regular';
+      }
+      p {
+        font-size: 18px;
+        font-family: 'hans light';
+        color: $grayMedium;
+      }
+    }
+  }
+
+  #team {
+    .jumbotron {
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .footer {
+    .location {
+      font-size: 18px;
+    }
+  }
+}
+
+/* Medium Devices Desktops */
+@media (max-width: 1200px) and (min-width: 940px) {
+  .jumbotron {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .slogon
+  {
+    .jumbotron {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .works {
+    p {
+      font-size: 15px;
+    }
+  }
+
+  #service {
+    .service_type {
+      h3 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .footer {
+    .location {
+      font-size: 16px;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 940px) {
+  .jumbotron {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .slogon
+  {
+    .jumbotron {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .works {
+    p {
+      font-size: 15px;
+    }
+  }
+
+  #service {
+    .service_type {
+      h3 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .footer {
+    .location {
+      font-size: 16px;
+    }
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .jumbotron {
+    h1 {
+      font-size: 22px;
+    }
+  }
+  .slogon
+  {
+    .jumbotron {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+  .works {
+    p {
+      font-size: 15px;
+    }
+  }
+
+  #service {
+    .service_type {
+      h3 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  #team {
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .footer {
+    .location {
+      font-size: 16px;
+    }
+  }
+}
+/* responsive end */
+
+/* global */
+body {
+  // padding-top: 50px;
+}
+
+.jumbotron {
+  // text-align: center;
+  padding: 65px 30px 30px 40px;
+  background-color: transparent;
+}
+/* global end */
+
+/* header start */
+.brand_logo {
+  margin-top: 39px;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  border-bottom: none;
+  margin-bottom: 0;
+  background-color: white;
+}
+
+.navbar-brand,
+.navbar-nav li {
+  height: 60px;
+}
+.navbar-nav li a {
+  margin-top: 35px;
+  color: #000000;
+}
+
+.navbar-nav li {
+  font-family: 'hans regular';
+  font-size: 18px;
+}
+/* header end */
+
+/* slogon start */
+.slogon {
+  .jumbotron {
+    h1 {
+      font-family: 'museo sans';
+      color: $grayDeep;
+    }
+    p {
+      font-weight: 300;
+      color: $gray;
+    }
+  }
+}
+/* slogon end */
+
+/* works start */
+.works {
+  font-family: 'museo sans';
+  p {
+    text-align: center;
+    margin-top: 20px;
+    color: $grayDeep;
+  }
+}
+/* works end */
+
+/* service start */
+#service {
+  background-color: #f9fafb;
+  h3 {
+    white-space: nowrap;
+  }
+  .jumbotron {
+    font-family: 'museo sans';
+    h1 {
+      color: $grayDeep;
+    }
+  }
+
+  .service_intro {
+    font-size: 36px;
+    font-color: #454545;
+  }
+
+  .service_type {
+    table {
+      margin-bottom: 50px;
+      td {
+        vertical-align: top;
+        img {
+          width: 180px;
+          padding-top: 25px;
+        }
+      }
+    }
+
+    margin-top: 80px;
+    img {
+      display: inline;
+      width: 200px;
+    }
+
+    h3 {
+      padding-left: 27px;
+      font-size: 28px;
+    }
+
+    p {
+      padding-left: 27px;
+      font-size: 18px;
+      padding-right: 20px;
+    }
+
+  }
+}
+/* service end */
+
+/* client start */
+#client {
+  margin-bottom: 162px;
+  .jumbotron {
+    padding-top: 90px;
+    padding-bottom: 0px;
+    margin-bottom: 45px;
+    font-family: 'museo sans';
+    p.client-jumbo {
+      font-size: 36px;
+      margin-bottom: 0px;
+    }
+
+    h1 {
+      color: $grayDeep;
+    }
+
+    .client {
+      margin-top: 10px;
+    }
+  }
+}
+/* client end */
+
+/* team start */
+#team {
+  background-color: $grayLight;
+  .jumbotron {
+    h1 {
+      color: $grayDeep;
+    }
+
+    p {
+      color: $gray;
+    }
+  }
+}
+/* team end */
+
+/* footer start */
+.footer {
+  background-color: rgb(216, 63, 63);
+  p {
+    color: #fff;
+  }
+  padding-bottom: 70px;
+
+  .footer_intro {
+    font-size: 36px;
+    margin-top: 48px;
+    margin-bottom: 0px;
+  }
+
+  .contact_us {
+    font-size: 48px;
+    img {
+      margin-right: 19px;
+    }
+  }
+
+  .contact {
+    color: $white;
+  }
+  .jumbotron {
+    h1 {
+      color: $white;
+      font-family: 'museo sans';
+    }
+    .contact-btn {
+      margin-top: 40px;
+      background-color: $pink;
+      border-color: $pink;
+      /* CSS3 color transition */
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      /* end transition */
+      &:hover {
+        /* CSS3 color transition */
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        /* end transition */
+        color: $pink;
+        background-color: $white;
+        border-color: $white;
+      }
+    }
+  }
+  .inline-img {
+    display: inline;
+  }
+  .social {
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+.information {
+  background-color: rgb(206, 55, 55);
+  padding-bottom: 5px;
+  p {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  span {
+    img {
+      margin-left: 45px;
+    }
+  }
+
+  .location {
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+
+  .inline-img {
+    display: inline;
+    width: 20px;
+  }
+}
+/* footer end */
+
+.emphasize {
+  color: $pink;
+}

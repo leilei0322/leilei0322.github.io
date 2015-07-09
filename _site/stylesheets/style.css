@@ -1,0 +1,341 @@
+/* Colors starts */
+/* Colors ends */
+/* CSS3 Animation */
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes spinrev {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(-360deg); } }
+
+/* end animation */
+/* import fonts */
+@font-face {
+  font-family: 'hans regular';
+  src: url("./fonts/NotoSansHans-Regular.otf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'hans medium';
+  src: url("./fonts/NotoSansHans-Medium.otf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'hans light';
+  src: url("./fonts/NotoSansHans-Thin.otf") format("truetype");
+  font-style: normal; }
+
+.light-font {
+  font-family: 'hans light'; }
+
+.regular-font {
+  font-family: 'hans regular'; }
+
+.medium-font {
+  font-family: 'hans regular'; }
+
+.emphasize {
+  font-family: 'hans medium';
+  color: #fa3d3d; }
+
+.emphasize-light {
+  font-family: 'hans medium';
+  color: #fa3d3d; }
+
+/* import font ends */
+/* Customize Carousel */
+.carousel-inner {
+  margin-bottom: 50px; }
+  .carousel-inner .banner_text {
+    position: absolute;
+    top: 137px;
+    bottom: 30px; }
+    .carousel-inner .banner_text h1 {
+      font-weight: 100;
+      font-size: 58px;
+      color: white;
+      letter-spacing: 5px; }
+    .carousel-inner .banner_text p {
+      color: #f81858;
+      font-weight: 100;
+      font-size: 24px;
+      float: left; }
+      .carousel-inner .banner_text p img {
+        display: inline-block; }
+
+.carousel-indicators {
+  bottom: -50px;
+  left: 55px; }
+  .carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border: none;
+    background-color: #777777; }
+  .carousel-indicators li.active {
+    width: 9px;
+    height: 9px;
+    border: none;
+    background-color: #000000; }
+
+/* Carousel ends */
+/* Customize reponsive */
+/* Large Devices Desktops  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px; }
+
+  .jumbotron h1 {
+    font-size: 36px; }
+
+  .slogon .jumbotron p {
+    font-size: 24px; }
+
+  .works p {
+    font-size: 18px; }
+
+  #service .service_type h3 {
+    font-size: 28px;
+    font-family: 'hans regular'; }
+  #service .service_type p {
+    font-size: 18px;
+    font-family: 'hans light';
+    color: #757575; }
+
+  #team .jumbotron p {
+    font-size: 24px; }
+
+  .footer .location {
+    font-size: 18px; } }
+/* Medium Devices Desktops */
+@media (max-width: 1200px) and (min-width: 940px) {
+  .jumbotron h1 {
+    font-size: 40px; }
+
+  .slogon .jumbotron p {
+    font-size: 20px; }
+
+  .works p {
+    font-size: 15px; }
+
+  #service .service_type h3 {
+    font-size: 25px; }
+  #service .service_type p {
+    font-size: 16px; }
+
+  .footer .location {
+    font-size: 16px; } }
+/* Tablets */
+@media (min-width: 768px) and (max-width: 940px) {
+  .jumbotron h1 {
+    font-size: 40px; }
+
+  .slogon .jumbotron p {
+    font-size: 20px; }
+
+  .works p {
+    font-size: 15px; }
+
+  #service .service_type h3 {
+    font-size: 25px; }
+  #service .service_type p {
+    font-size: 16px; }
+
+  .footer .location {
+    font-size: 16px; } }
+/* Phones */
+@media (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 22px; }
+
+  .slogon .jumbotron p {
+    font-size: 18px; }
+
+  .works p {
+    font-size: 15px; }
+
+  #service .service_type h3 {
+    font-size: 18px; }
+  #service .service_type p {
+    font-size: 14px; }
+
+  #team p {
+    font-size: 18px; }
+
+  .footer .location {
+    font-size: 16px; } }
+/* responsive end */
+/* global */
+.jumbotron {
+  padding: 65px 30px 30px 40px;
+  background-color: transparent; }
+
+/* global end */
+/* header start */
+.brand_logo {
+  margin-top: 39px;
+  margin-bottom: 30px; }
+
+.navbar {
+  border-bottom: none;
+  margin-bottom: 0;
+  background-color: white; }
+
+.navbar-brand,
+.navbar-nav li {
+  height: 60px; }
+
+.navbar-nav li a {
+  margin-top: 35px;
+  color: #000000; }
+
+.navbar-nav li {
+  font-family: 'hans regular';
+  font-size: 18px; }
+
+/* header end */
+/* slogon start */
+.slogon .jumbotron h1 {
+  font-family: 'museo sans';
+  color: #454545; }
+.slogon .jumbotron p {
+  font-weight: 300;
+  color: #777777; }
+
+/* slogon end */
+/* works start */
+.works {
+  font-family: 'museo sans'; }
+  .works p {
+    text-align: center;
+    margin-top: 20px;
+    color: #454545; }
+
+/* works end */
+/* service start */
+#service {
+  background-color: #f9fafb; }
+  #service h3 {
+    white-space: nowrap; }
+  #service .jumbotron {
+    font-family: 'museo sans'; }
+    #service .jumbotron h1 {
+      color: #454545; }
+  #service .service_intro {
+    font-size: 36px;
+    font-color: #454545; }
+  #service .service_type {
+    margin-top: 80px; }
+    #service .service_type table {
+      margin-bottom: 50px; }
+      #service .service_type table td {
+        vertical-align: top; }
+        #service .service_type table td img {
+          width: 180px;
+          padding-top: 25px; }
+    #service .service_type img {
+      display: inline;
+      width: 200px; }
+    #service .service_type h3 {
+      padding-left: 27px;
+      font-size: 28px; }
+    #service .service_type p {
+      padding-left: 27px;
+      font-size: 18px;
+      padding-right: 20px; }
+
+/* service end */
+/* client start */
+#client {
+  margin-bottom: 162px; }
+  #client .jumbotron {
+    padding-top: 90px;
+    padding-bottom: 0px;
+    margin-bottom: 45px;
+    font-family: 'museo sans'; }
+    #client .jumbotron p.client-jumbo {
+      font-size: 36px;
+      margin-bottom: 0px; }
+    #client .jumbotron h1 {
+      color: #454545; }
+    #client .jumbotron .client {
+      margin-top: 10px; }
+
+/* client end */
+/* team start */
+#team {
+  background-color: gainsboro; }
+  #team .jumbotron h1 {
+    color: #454545; }
+  #team .jumbotron p {
+    color: #777777; }
+
+/* team end */
+/* footer start */
+.footer {
+  background-color: #d83f3f;
+  padding-bottom: 70px; }
+  .footer p {
+    color: #fff; }
+  .footer .footer_intro {
+    font-size: 36px;
+    margin-top: 48px;
+    margin-bottom: 0px; }
+  .footer .contact_us {
+    font-size: 48px; }
+    .footer .contact_us img {
+      margin-right: 19px; }
+  .footer .contact {
+    color: white; }
+  .footer .jumbotron h1 {
+    color: white;
+    font-family: 'museo sans'; }
+  .footer .jumbotron .contact-btn {
+    margin-top: 40px;
+    background-color: #fa3d3d;
+    border-color: #fa3d3d;
+    /* CSS3 color transition */
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    /* end transition */ }
+    .footer .jumbotron .contact-btn:hover {
+      /* CSS3 color transition */
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      /* end transition */
+      color: #fa3d3d;
+      background-color: white;
+      border-color: white; }
+  .footer .inline-img {
+    display: inline; }
+  .footer .social img {
+    margin-right: 10px; }
+
+.information {
+  background-color: #ce3737;
+  padding-bottom: 5px; }
+  .information p {
+    color: #fff;
+    font-size: 18px; }
+  .information span img {
+    margin-left: 45px; }
+  .information .location {
+    margin-top: 40px;
+    margin-bottom: 5px; }
+  .information .inline-img {
+    display: inline;
+    width: 20px; }
+
+/* footer end */
+.emphasize {
+  color: #fa3d3d; }

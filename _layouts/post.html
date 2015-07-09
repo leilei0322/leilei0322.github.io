@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    <div id='container'>
+      <div class="content">
+        <section class='post'>
+          <h1>
+            <div class='date'>{{ page.date | date_to_string }}</div>
+            {{ page.title }}
+          </h1>
+          {{ content }}
+        </section>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
